@@ -14,6 +14,10 @@ print(keyword.kwlist)
 
 # CH2
 # 구문 오류 Syntax Error : 실행 X, 대표적으로 괄호 여닫는 문제/ 따옴표 문제
+#### print("큰따옴표 "안에" 큰따옴표")
+#### print(type('buji-learn'))
+#### print(type('buji-learn')
+
 # 이스케이프 문자 escape character
 # \n : 줄바꿈
 # \t : 탭
@@ -21,11 +25,25 @@ print(keyword.kwlist)
 # """\ (문자)""" : 줄간격 없음
 
 # TypeError : 서로 다른 자료 type을 연산했을 때
+"""
+a = '1031'
+print(type(a))
+print(type(int(a)))
+
+b = '일공삼일'
+print(type(b))
+print(int(type(b)))
+
+print("문자랑 숫자를 더해볼까" + 1)
+"""
 
 # input() 입력값의 자료는 문자형
 # cast : 숫자로 바꿔주기 >> int(), float()
 
 # ValueError : 변환할 수 없는 것을 변환하려고 할 때
+# print(int('문자열'))
+# print(float('문자열'))
+
 
 # format() 함수 ~ 문자열
 # {} {}.format( , )
@@ -51,6 +69,14 @@ print('output5 :', output5)
 # 소숫점 아래 
 
 # IndexError : {}개수와 ()안의 개수 안 맞을 때
+# list_A = ['A', 'B', 'C']
+# print(list_A[0])
+# print(list_A[3])
+print("문자열 안에 {} {}".format('"괄호"', "'넣어서'"))
+# print("문자열 {} {} {}".format(1, 2))
+print("문자열 {} {}".format(1, 2, 500))
+
+# ""
 
 # upper()
 # lower()
